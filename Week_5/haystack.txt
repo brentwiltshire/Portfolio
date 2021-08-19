@@ -1,0 +1,5 @@
+bd		-/.bmdirs
+cfb		-/.bashrc
+cfz		-/.zshrc
+eb		-/.Documents/Latex.bib
+cv             -/.Documents/Latex/cv.tex

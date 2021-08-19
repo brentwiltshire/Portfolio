@@ -1,0 +1,13 @@
+bd		~/.bmdirs
+cfb		~/.bashrc
+Three blank lines below
+
+
+
+cfz		~/.zshrc
+eb		~/.Documents/Latex.bib
+
+
+cv             ~/.Documents/Latex/cv.tex   # fdsads
+
+# Blank comment
