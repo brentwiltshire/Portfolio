@@ -1,0 +1,11 @@
+Gumboots $4000   Profit $4000
+Shoe $4   Profit $4000
+Hose $4    Profit $5
+Tin $4000     Profit $2
+Lighter $5 Profit -$1
+a=1
+bb=2
+ccc=3
+dddd=4
+eeeee=5
+ffffff=6

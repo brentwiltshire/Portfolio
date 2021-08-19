@@ -1,0 +1,5 @@
+Line 1 - a Start$
+Line 2 - b is showing b, any line that ends Start
+Start$ Line 3 - c
+Line 4 - d S t a r t $
+     

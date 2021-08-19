@@ -1,0 +1,5 @@
+Gumboots $3   Profit $3
+Shoe $4   Profit $3
+Hose $4    Profit $5
+Tin $3     Profit $2
+Lighter $5 Profit -$1
