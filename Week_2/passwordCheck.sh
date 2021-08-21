@@ -26,7 +26,6 @@ else
     echo "Access Denied"
     exit 1
 fi
-exit 0
 
 # REFERENCES
-# https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php
+#   https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php
