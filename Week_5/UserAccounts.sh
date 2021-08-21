@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Intent is to use AWK to format user account information
+
 grep -i '/bin/bash' /etc/passwd | awk 'BEGIN {
     FS=":";
     print "";
@@ -13,3 +15,7 @@ END {
     print "|_____________________|_________|__________|______________|_________________|";
 }'
 exit 0
+
+# REFERENCES
+#   https://www.geeksforgeeks.org/awk-command-unixlinux-examples/
+#   https://likegeeks.com/awk-command/
