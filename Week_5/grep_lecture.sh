@@ -53,3 +53,7 @@ sed "s/\s*#.*//g;  /cf/ q" bmfiles.txt
 # ^  Beginning of a line
 # $  Match all the end of the line
 sed "s/\s*#.*//g;  /^$/ d" bmfiles.txt
+
+
+# Ideas for other things can do in sed.
+#   1. Torrent module - Replacing system data to display icons.

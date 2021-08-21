@@ -15,16 +15,16 @@
 #echo $2
 
 #Question 2
-func_4 ()
-{
-    number=5
-    echo $(( number+number ))
-}
-func_4
-echo $?
-echo $number
-echo $1
-echo $2
+#func_4 ()
+# {
+#    number=5
+#    echo $(( number+number ))
+# }
+#func_4
+#echo $?
+#echo $number
+#echo $1
+#echo $2
 
 #Question 4
 #Answer could be 21, but unsure.
@@ -63,10 +63,10 @@ echo $2
 #printf "%0.2f\n" $x
 
 #Question 9
-#searchForItems()
-# { 
-#   grep "items" $1
-#   }
+searchForItems()
+{ 
+   grep "items" $1
+  }
 # Wrong - searchForItems "items"
 # Wrong - search "items" shoppinglist.txt
 # Unsure, think it searched the file but that's all. 
