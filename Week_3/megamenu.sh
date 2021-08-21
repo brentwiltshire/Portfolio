@@ -23,15 +23,14 @@ stored_pass=$(cat "$extract_file") #Extracts text in file and compares to CLI in
 
 if [ "$pass_var" == "$stored_pass" ]; then 
    echo -en "$green"
- echo "Access Granted"
+   echo "Access Granted"
 else 
-echo -en "$red"
+   echo -en "$red"
    echo "Access Denied"
    exit 1
 fi
-#exit 0
 
-
+# Create variables
 option_1=1
 option_2=2
 option_3=3
@@ -41,62 +40,61 @@ option_6=6
 option_7=7
 option_8=8
 
-
-
 while :; #have to add semicolon 
 do
-echo -en "$blue"
-echo ""
-echo "Select an option"
-echo "  $option_1 - Create a folder"
-echo "  $option_2 - Copy a folder"
-echo "  $option_3 - Set a password"
-echo "  $option_4 - Calculator"
-echo "  $option_5 - Create Week Folders"
-echo "  $option_6 - Check Filenames"
-echo "  $option_7 - Download a File"
-echo "  $option_8 - Exit"
-echo -en "$purple"
-read -p "Enter the number option you want to select: " option
-echo -en "$reset_colour"
-case $option in
- [1] )
-echo "You have selected option $option_1 - Create a folder"
-source /home/brent/Student/Scripts/Portfolio/Week_2/Folder_Maker.sh
-;;
- [2] )
- echo "You have selected option $option_2 - Copy a folder"
-source /home/brent/Student/Scripts/Portfolio/foldercopier.sh
-;;
- [3] )
-  echo "You have selected option $option_3 - Set a password"
-source /home/brent/Student/Scripts/Portfolio/Week_2/setPassword.sh
- ;;
- [4] )
- echo "You have selected option $option_4 - Calculator"
-source /home/brent/Student/Scripts/Portfolio/Week_3/calculator.sh
-;;
- [5] )
- echo "You have selected option $option_5 - Create Week Folders"
-source /home/brent/Student/Scripts/Portfolio/Week_3/megafoldermaker.sh
-;;
- [6] )
- echo "You have selected option $option_6 - Check Filenames"
-source /home/brent/Student/Scripts/Portfolio/Week_3/filenames5.sh
-;;
- [7] )
- echo "You have selected option $option_7 - Download a File"
-source /home/brent/Student/Scripts/Portfolio/Week_3/webdownloader5.sh
-;;
-[8] )
-echo "You have selected $option_8. See you next time"
-break
-;;
-*   ) 
-echo -en "$red"
-echo "Invalid number, please input a number from the options available"
-echo -en "$reset_colour"
-esac
+   echo -en "$blue"
+   echo ""
+   echo "Select an option"
+   echo "  $option_1 - Create a folder"
+   echo "  $option_2 - Copy a folder"
+   echo "  $option_3 - Set a password"
+   echo "  $option_4 - Calculator"
+   echo "  $option_5 - Create Week Folders"
+   echo "  $option_6 - Check Filenames"
+   echo "  $option_7 - Download a File"
+   echo "  $option_8 - Exit"
+   echo -en "$purple"
+   read -p "Enter the number option you want to select: " option
+   echo -en "$reset_colour"
+   case $option in
+      [1] )
+        echo "You have selected option $option_1 - Create a folder"
+        source /home/brent/Student/Scripts/Portfolio/Week_2/Folder_Maker.sh
+        ;;
+      [2] )
+        echo "You have selected option $option_2 - Copy a folder"
+        source /home/brent/Student/Scripts/Portfolio/foldercopier.sh
+        ;;
+      [3] )
+        echo "You have selected option $option_3 - Set a password"
+        source /home/brent/Student/Scripts/Portfolio/Week_2/setPassword.sh
+        ;;
+      [4] )
+        echo "You have selected option $option_4 - Calculator"
+        source /home/brent/Student/Scripts/Portfolio/Week_3/calculator.sh
+        ;;
+      [5] )
+         echo "You have selected option $option_5 - Create Week Folders"
+         source /home/brent/Student/Scripts/Portfolio/Week_3/megafoldermaker.sh
+         ;;
+      [6] )
+         echo "You have selected option $option_6 - Check Filenames"
+         source /home/brent/Student/Scripts/Portfolio/Week_3/filenames5.sh
+         ;;
+      [7] )
+         echo "You have selected option $option_7 - Download a File"
+         source /home/brent/Student/Scripts/Portfolio/Week_3/webdownloader5.sh
+         ;;
+      [8] )
+         echo "You have selected option $option_8. See you next time"
+         break
+         ;;
+      #Used to obtain any invalid selections.
+      * ) 
+         echo -en "$red"
+         echo "Invalid number, please input a number from the options available"
+         echo -en "$reset_colour"
+   esac
 done
 exit 0
 
