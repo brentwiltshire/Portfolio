@@ -1,20 +1,8 @@
 #!/bin/bash
 
-#Version control
-#12 Aug - Removed working comments from passwordcheck.sh
-#12 Aug - Fixed bug in hard coding Extract file
-
-# Resources
-# Execution of files:
-#   https://stackoverflow.com/questions/27626800/run-bash-script-from-another-script-and-exit-first-script-while-second-is-runnin
-#   https://askubuntu.com/questions/1339168/how-to-program-a-shell-script-to-start-another-script-and-use-the-same-variable
-#   https://www.lostsaloon.com/technology/how-to-call-shell-script-sh-file-from-another-shell-script/
-
-#Loops break and continue
-#   https://tldp.org/LDP/abs/html/loopcontrol.html
-#   https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_09_05.html
-#   https://linuxize.com/post/bash-break-continue/#:~:text=Loops%20allow%20you%20to%20run,to%20control%20the%20loop%20execution.
-
+# Version control
+# 12 Aug - Removed working comments from passwordcheck.sh
+# 12 Aug - Fixed bug in hard coding Extract file
 
 # Colour variables
 black='\033[30m'
@@ -109,5 +97,16 @@ echo -en "$red"
 echo "Invalid number, please input a number from the options available"
 echo -en "$reset_colour"
 esac
-
 done
+exit 0
+
+# REFERENCES
+# Execution of files:
+#   https://stackoverflow.com/questions/27626800/run-bash-script-from-another-script-and-exit-first-script-while-second-is-runnin
+#   https://askubuntu.com/questions/1339168/how-to-program-a-shell-script-to-start-another-script-and-use-the-same-variable
+#   https://www.lostsaloon.com/technology/how-to-call-shell-script-sh-file-from-another-shell-script/
+
+# Loops break and continue
+#   https://tldp.org/LDP/abs/html/loopcontrol.html
+#   https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_09_05.html
+#   https://linuxize.com/post/bash-break-continue/#:~:text=Loops%20allow%20you%20to%20run,to%20control%20the%20loop%20execution.
