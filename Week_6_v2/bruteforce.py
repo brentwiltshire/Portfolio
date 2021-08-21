@@ -7,7 +7,7 @@ import itertools    # additional for combos
 import string       # string library
 
 # Hidden password hash for blah.
-passwordHash = "8b7df143d91c716ecfa5fc1730022f6b421b05cedee8fd52b1fc65a96030ad52"   # Hash for blah 
+passwordHash = "8b7df143d91c716ecfa5fc1730022f6b421b05cedee8fd52b1fc65a96030ad52"
 
 # Space words and list characters and numbers
 characterList = string.ascii_lowercase + string.ascii_uppercase + "0123456789"
