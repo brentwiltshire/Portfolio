@@ -9,5 +9,5 @@ echo "It's good to see you $1!"
 exit 0 
 
 # REFERENCES
-# Course lecture material for this basic concept.
+#   Course lecture material for this basic concept.
      
